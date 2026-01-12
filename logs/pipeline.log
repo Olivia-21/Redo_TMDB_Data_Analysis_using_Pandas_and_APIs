@@ -149,3 +149,92 @@
 2026-01-09 18:29:53 | INFO     | analysis | Franchise vs Standalone comparison complete
 2026-01-09 18:29:54 | INFO     | visualize | ✓ Saved: visualizations\franchise_comparison.png
 2026-01-09 18:29:54 | INFO     | visualize | Created 5 visualizations
+2026-01-12 15:24:21 | INFO     | extract | Starting extraction for 19 movies...
+2026-01-12 15:24:21 | INFO     | extract | Processing movie 1/19 (ID: 0)
+2026-01-12 15:24:22 | WARNING  | extract | Movie ID 0 not found (404)
+2026-01-12 15:24:22 | INFO     | extract | Processing movie 2/19 (ID: 299534)
+2026-01-12 15:24:26 | INFO     | extract | ✓ Successfully extracted: Avengers: Endgame
+2026-01-12 15:24:26 | INFO     | extract | Processing movie 3/19 (ID: 19995)
+2026-01-12 15:24:29 | INFO     | extract | ✓ Successfully extracted: Avatar
+2026-01-12 15:24:29 | INFO     | extract | Processing movie 4/19 (ID: 140607)
+2026-01-12 15:24:32 | INFO     | extract | ✓ Successfully extracted: Star Wars: The Force Awakens
+2026-01-12 15:24:32 | INFO     | extract | Processing movie 5/19 (ID: 299536)
+2026-01-12 15:24:37 | INFO     | extract | ✓ Successfully extracted: Avengers: Infinity War
+2026-01-12 15:24:37 | INFO     | extract | Processing movie 6/19 (ID: 597)
+2026-01-12 15:24:40 | INFO     | extract | ✓ Successfully extracted: Titanic
+2026-01-12 15:24:40 | INFO     | extract | Processing movie 7/19 (ID: 135397)
+2026-01-12 15:24:44 | INFO     | extract | ✓ Successfully extracted: Jurassic World
+2026-01-12 15:24:44 | INFO     | extract | Processing movie 8/19 (ID: 420818)
+2026-01-12 15:24:47 | INFO     | extract | ✓ Successfully extracted: The Lion King
+2026-01-12 15:24:47 | INFO     | extract | Processing movie 9/19 (ID: 24428)
+2026-01-12 15:24:50 | INFO     | extract | ✓ Successfully extracted: The Avengers
+2026-01-12 15:24:51 | INFO     | extract | Processing movie 10/19 (ID: 168259)
+2026-01-12 15:24:54 | INFO     | extract | ✓ Successfully extracted: Furious 7
+2026-01-12 15:24:54 | INFO     | extract | Processing movie 11/19 (ID: 99861)
+2026-01-12 15:24:57 | INFO     | extract | ✓ Successfully extracted: Avengers: Age of Ultron
+2026-01-12 15:24:58 | INFO     | extract | Processing movie 12/19 (ID: 284054)
+2026-01-12 15:25:00 | INFO     | extract | ✓ Successfully extracted: Black Panther
+2026-01-12 15:25:01 | INFO     | extract | Processing movie 13/19 (ID: 12445)
+2026-01-12 15:25:04 | INFO     | extract | ✓ Successfully extracted: Harry Potter and the Deathly Hallows: Part 2
+2026-01-12 15:25:05 | INFO     | extract | Processing movie 14/19 (ID: 181808)
+2026-01-12 15:25:09 | INFO     | extract | ✓ Successfully extracted: Star Wars: The Last Jedi
+2026-01-12 15:25:10 | INFO     | extract | Processing movie 15/19 (ID: 330457)
+2026-01-12 15:25:14 | INFO     | extract | ✓ Successfully extracted: Frozen II
+2026-01-12 15:25:14 | INFO     | extract | Processing movie 16/19 (ID: 351286)
+2026-01-12 15:25:18 | INFO     | extract | ✓ Successfully extracted: Jurassic World: Fallen Kingdom
+2026-01-12 15:25:18 | INFO     | extract | Processing movie 17/19 (ID: 109445)
+2026-01-12 15:25:22 | INFO     | extract | ✓ Successfully extracted: Frozen
+2026-01-12 15:25:22 | INFO     | extract | Processing movie 18/19 (ID: 321612)
+2026-01-12 15:25:25 | INFO     | extract | ✓ Successfully extracted: Beauty and the Beast
+2026-01-12 15:25:26 | INFO     | extract | Processing movie 19/19 (ID: 260513)
+2026-01-12 15:25:29 | INFO     | extract | ✓ Successfully extracted: Incredibles 2
+2026-01-12 15:25:29 | INFO     | extract | Extraction complete! Success: 18, Failed: 1
+2026-01-12 15:25:29 | INFO     | extract | DataFrame shape: (18, 30)
+2026-01-12 15:26:41 | INFO     | load | Saving raw data to data/raw\movies_raw.csv...
+2026-01-12 15:26:41 | INFO     | load | ✓ Saved 18 rows to data/raw\movies_raw.csv
+2026-01-12 15:26:50 | INFO     | transform | Starting transformation on 18 rows...
+2026-01-12 15:26:50 | INFO     | transform | Dropping columns: ['adult', 'imdb_id', 'original_title', 'video', 'homepage']
+2026-01-12 15:26:50 | INFO     | transform | Parsing JSON-like columns...
+2026-01-12 15:26:50 | INFO     | transform | JSON column parsing complete
+2026-01-12 15:26:50 | INFO     | transform | Converting data types...
+2026-01-12 15:26:50 | INFO     | transform | Data type conversion complete
+2026-01-12 15:26:50 | INFO     | transform | Handling missing values...
+2026-01-12 15:26:50 | INFO     | transform | Missing value handling complete
+2026-01-12 15:26:50 | INFO     | transform | Removing duplicates and invalid rows...
+2026-01-12 15:26:50 | INFO     | transform | Filtering rows with at least 10 non-NaN values...
+2026-01-12 15:26:50 | INFO     | transform | Filtering to released movies only...
+2026-01-12 15:26:50 | INFO     | transform | Reordering columns...
+2026-01-12 15:26:50 | INFO     | transform | Transformation complete! Final shape: (18, 24)
+2026-01-12 15:26:50 | INFO     | transform | Columns: ['id', 'title', 'tagline', 'release_date', 'genres', 'belongs_to_collection', 'original_language', 'budget_musd', 'revenue_musd', 'production_companies', 'production_countries', 'vote_count', 'vote_average', 'popularity', 'runtime', 'overview', 'spoken_languages', 'poster_path', 'cast', 'cast_size', 'director', 'crew_size', 'backdrop_path', 'origin_country']
+2026-01-12 15:26:53 | INFO     | load | Saving processed data to data/processed\movies_clean.csv...
+2026-01-12 15:26:53 | INFO     | load | ✓ Saved 18 rows to data/processed\movies_clean.csv
+2026-01-12 15:27:01 | INFO     | analysis | Calculating summary statistics...
+2026-01-12 15:27:01 | INFO     | analysis | Summary statistics calculated
+2026-01-12 15:27:09 | INFO     | analysis | Calculating best/worst movie rankings...
+2026-01-12 15:27:09 | INFO     | analysis | Generated 12 ranking categories
+2026-01-12 15:27:25 | INFO     | analysis | Executing Search 1: Bruce Willis Sci-Fi Action movies...
+2026-01-12 15:27:25 | INFO     | analysis | Executing advanced movie search...
+2026-01-12 15:27:25 | INFO     | analysis | Search returned 0 results
+2026-01-12 15:27:27 | INFO     | analysis | Executing Search 2: Uma Thurman + Quentin Tarantino movies...
+2026-01-12 15:27:27 | INFO     | analysis | Executing advanced movie search...
+2026-01-12 15:27:27 | INFO     | analysis | Search returned 0 results
+2026-01-12 15:27:32 | INFO     | analysis | Comparing franchise vs standalone movies...
+2026-01-12 15:27:32 | INFO     | analysis | Franchise vs Standalone comparison complete
+2026-01-12 15:27:36 | INFO     | analysis | Analyzing top 10 franchises...
+2026-01-12 15:27:36 | INFO     | analysis | Found 10 franchises
+2026-01-12 15:27:40 | INFO     | analysis | Analyzing top 10 directors...
+2026-01-12 15:27:40 | INFO     | analysis | Found 10 directors
+2026-01-12 15:27:44 | INFO     | visualize | Creating all visualizations...
+2026-01-12 15:27:44 | INFO     | visualize | Creating Revenue vs Budget plot...
+2026-01-12 15:27:45 | INFO     | visualize | ✓ Saved: visualizations\revenue_vs_budget.png
+2026-01-12 15:27:45 | INFO     | visualize | Creating ROI by Genre plot...
+2026-01-12 15:27:46 | INFO     | visualize | ✓ Saved: visualizations\roi_by_genre.png
+2026-01-12 15:27:46 | INFO     | visualize | Creating Popularity vs Rating plot...
+2026-01-12 15:27:47 | INFO     | visualize | ✓ Saved: visualizations\popularity_vs_rating.png
+2026-01-12 15:27:47 | INFO     | visualize | Creating Yearly Trends plot...
+2026-01-12 15:27:47 | INFO     | visualize | ✓ Saved: visualizations\yearly_trends.png
+2026-01-12 15:27:47 | INFO     | visualize | Creating Franchise vs Standalone comparison plot...
+2026-01-12 15:27:47 | INFO     | analysis | Comparing franchise vs standalone movies...
+2026-01-12 15:27:47 | INFO     | analysis | Franchise vs Standalone comparison complete
+2026-01-12 15:27:48 | INFO     | visualize | ✓ Saved: visualizations\franchise_comparison.png
+2026-01-12 15:27:48 | INFO     | visualize | Created 5 visualizations
