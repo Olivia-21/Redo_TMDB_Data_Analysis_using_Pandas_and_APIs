@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs (optional - uncomment to track logs)
+# logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (optional - uncomment if data should not be tracked)
+# data/raw/
+# data/processed/
+
+# Visualizations (optional - uncomment if images should not be tracked)
+# visualizations/
+
+# Config with sensitive data (if you move API key to .env)
+# .env
