@@ -4,11 +4,9 @@
 
 This project analyzed movie data collected from the TMDB API. The goal was to clean the dataset, transform key fields, and extract insights about movie performance over the years.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 📋 Table of Contents
+
+##  Table of Contents
 
 - [Overview](#overview)
 - [Project Structure](#project-structure)
