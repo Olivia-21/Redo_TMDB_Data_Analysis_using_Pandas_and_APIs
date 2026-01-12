@@ -31,3 +31,8 @@ Thumbs.db
 
 # Config with sensitive data (if you move API key to .env)
 # .env
+
+
+read.md
+
+test_pipeline.py

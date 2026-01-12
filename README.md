@@ -1,6 +1,8 @@
-# 🎬 TMDB Movie Data Analysis Pipeline
+#  TMDB Movie Data Analysis Pipeline
 
-A beginner-friendly yet production-ready ETL pipeline for analyzing movie data from The Movie Database (TMDB).
+### 1. Introduction 
+
+This project analyzed movie data collected from the TMDB API. The goal was to clean the dataset, transform key fields, and extract insights about movie performance over the years.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0+-green.svg)
@@ -33,11 +35,11 @@ This project builds a complete movie data analysis pipeline that:
 
 ### Key Features
 
-- ✅ **Retry Logic**: Automatic retries with exponential backoff for API failures
-- ✅ **Structured Logging**: Console and file logging for debugging
-- ✅ **Modular Design**: Separate modules for each pipeline stage
-- ✅ **Comprehensive Analysis**: Rankings, search queries, franchise comparisons
-- ✅ **Beautiful Visualizations**: 5 chart types for data insights
+-  **Retry Logic**: Automatic retries with exponential backoff for API failures
+-  **Structured Logging**: Console and file logging for debugging
+-  **Modular Design**: Separate modules for each pipeline stage
+-  **Comprehensive Analysis**: Rankings, search queries, franchise comparisons
+-  **Beautiful Visualizations**: 5 chart types for data insights
 
 ---
 
@@ -341,12 +343,4 @@ Logs are written to both console and `logs/pipeline.log`.
 
 ---
 
-## License
 
-This project is for educational purposes.
-
----
-
-## Author
-
-Created for the TMDB Movie Data Analysis project.
